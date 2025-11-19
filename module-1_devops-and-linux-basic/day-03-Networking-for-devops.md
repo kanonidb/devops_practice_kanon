@@ -214,5 +214,12 @@ To chack status
 -----------------------------
 sudo systemctl status ssh
 
+To see IP address of VM
+-----------------------------
+ip addr | grep inet
+
+
+Need to change Settings of VirtualBox
+--------------------------------------------------
 VirtualBox → Settings → Network -> Adapter1 
 Attached to -> Bridged Adapter, Name -> wlp)s2f3 , Promiscuous Mode -> Allow VMs
