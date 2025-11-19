@@ -198,4 +198,19 @@ wget -b https://example.com/largefile.iso
 | NTP         | 123          | UDP      | Time sync              |
 
 
+SSH server is installed inside your VM
+----------------------------------------
+sudo apt update
+sudo apt install openssh-server -y
 
+To active and enable ssh
+---------------------------------
+sudo systemctl start ssh
+sudo systemctl enable ssh
+
+To chack status
+-----------------------------
+sudo systemctl status ssh
+
+VirtualBox → Settings → Network -> Adapter1 
+Attached to -> Bridged Adapter, Name -> wlp)s2f3 , Promiscuous Mode -> Allow VMs
