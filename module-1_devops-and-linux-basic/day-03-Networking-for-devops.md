@@ -201,11 +201,13 @@ wget -b https://example.com/largefile.iso
 SSH server is installed inside your VM
 ----------------------------------------
 sudo apt update
+
 sudo apt install openssh-server -y
 
 To active and enable ssh
 ---------------------------------
 sudo systemctl start ssh
+
 sudo systemctl enable ssh
 
 To chack status
